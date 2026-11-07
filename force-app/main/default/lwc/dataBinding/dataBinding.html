@@ -1,0 +1,24 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-card title="one way Data Binding" icon-name="custom:custom63">
+        
+            <div class="slds-p-horizontal_medium slds-m-top_medium">
+                <p>Hello {userName}</p>
+                <p>{currentTime}</p>
+                <p>{subscribeScore}</p>
+                <p>{totalWatchTime}</p>
+
+            </div>
+        </lightning-card>
+
+        <lightning-card title="Two way Data Binding" icon-name="custom:custom63">
+        
+            <div class="slds-p-horizontal_medium slds-m-top_medium">
+                <lightning-input type="text" label="Enter your status" value={status} onchange={handleStatusChange}></lightning-input>
+                <p>Your status: {status}</p>
+
+            </div>
+        </lightning-card>
+    </div>
+   
+</template>
